@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="644.0" styleClass="commercialView" stylesheets="@layout.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CommercialController">
+	<children>
+		<HBox alignment="TOP_CENTER" styleClass="twoDspaceAndPaddingList">
+			<children>
+				<HBox focusTraversable="true" prefHeight="65.0" prefWidth="513.0" spacing="10.0" style="-fx-background-radius: 40;">
+					<children>
+						<SVGPath content="M15 16h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1zm1-6h1v4h-1v-4zm-7 6h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1zm1-6h1v4h-1v-4zM5 8h2v8H5zM2 4v16h20V4H2zm18 14H4V6h16v12z" fill="#ffbb00" scaleX="1.5" scaleY="1.5" styleClass="fillTextBlack" />
+						<Label text="Commission" textFill="#ffbb00">
+							<font>
+								<Font name="System Bold" size="25.0" />
+							</font>
+						</Label>
+					</children>
+					<styleClass>
+						<String fx:value="title" />
+						<String fx:value="whiteScreen" />
+					</styleClass>
+					<effect>
+						<DropShadow color="#ffbb00b1" offsetX="2.0" offsetY="2.0" spread="0.3" />
+					</effect>
+				</HBox>
+			</children>
+		</HBox>
+		<VBox prefHeight="615.0" prefWidth="843.0" styleClass="twoDspaceAndPaddingList" VBox.vgrow="ALWAYS">
+			<children>
+            <AnchorPane prefHeight="27.0" prefWidth="1020.0">
+               <children>
+                  <JFXComboBox fx:id="cuName" focusColor="#ffbb00" layoutX="7.0" layoutY="10.0" onAction="#search" prefHeight="25.0" prefWidth="294.0" />
+                  <TextField fx:id="overAll" alignment="TOP_CENTER" layoutX="510.0" layoutY="14.0" prefHeight="25.0" prefWidth="70.0" promptText="Overall %">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <JFXDatePicker fx:id="from" defaultColor="#ffbb00" editable="false" layoutX="604.0" layoutY="12.0" prefHeight="10.0" prefWidth="100.0" promptText="From" />
+                  <JFXDatePicker fx:id="to" defaultColor="#ffbb00" editable="false" layoutX="712.0" layoutY="12.0" prefHeight="10.0" prefWidth="100.0" promptText="To" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="546.0" prefWidth="891.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="558.0" prefWidth="812.0">
+                     <children>
+            				<TableView fx:id="table" prefHeight="552.0" prefWidth="703.0" styleClass="commissionstyle">
+            					<columns>
+            						<TableColumn prefWidth="295.0" text="Agent Name">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="customerName" />
+            							</cellValueFactory>
+            						</TableColumn>
+            						<TableColumn prefWidth="117.0" style="-fx-alignment: top-right;" text="Total Amount">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="totalAmount" />
+            							</cellValueFactory>
+            						</TableColumn>
+            						<TableColumn prefWidth="93.0" style="-fx-alignment: top-right;" text="Total Com:">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="price" />
+            							</cellValueFactory>
+            						</TableColumn>
+            						<TableColumn prefWidth="65.0" text="Value">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="value" />
+            							</cellValueFactory>
+            						</TableColumn>
+            						<TableColumn prefWidth="119.0" text="From Date">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="date" />
+            							</cellValueFactory>
+            						</TableColumn>
+                              <TableColumn prefWidth="122.0" text="To Date">
+            							<cellValueFactory>
+            								<PropertyValueFactory property="dateTo" />
+            							</cellValueFactory>
+            						</TableColumn>
+            					</columns>
+            				</TableView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="546.0" prefWidth="191.0" spacing="50.0">
+                     <children>
+                        <VBox prefHeight="86.0" prefWidth="185.0">
+                           <children>
+                              <Label text="Total Agent">
+                                 <styleClass>
+                                    <String fx:value="twofont3" />
+                                    <String fx:value="boldFont" />
+                                 </styleClass>
+                              </Label>
+                              <HBox alignment="TOP_RIGHT">
+                                 <children>
+                                    <Label fx:id="totalCustomer" text="0 PERSONS">
+                                       <styleClass>
+                                          <String fx:value="twofont3" />
+                                          <String fx:value="boldFont" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="280.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefWidth="185.0">
+                           <children>
+                              <Label text="Total Amount">
+                                 <styleClass>
+                                    <String fx:value="twofont3" />
+                                    <String fx:value="boldFont" />
+                                 </styleClass>
+                              </Label>
+                              <HBox alignment="TOP_RIGHT">
+                                 <children>
+                                    <Label fx:id="totalAmt" text="0 MMK">
+                                       <styleClass>
+                                          <String fx:value="twofont3" />
+                                          <String fx:value="boldFont" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="366.0" prefWidth="185.0">
+                           <children>
+                              <Label text="Total Commission">
+                                 <styleClass>
+                                    <String fx:value="twofont3" />
+                                    <String fx:value="boldFont" />
+                                 </styleClass>
+                              </Label>
+                              <HBox alignment="TOP_RIGHT">
+                                 <children>
+                                    <Label fx:id="totalCom" text="0 MMK">
+                                       <styleClass>
+                                          <String fx:value="twofont3" />
+                                          <String fx:value="boldFont" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+			</children>
+		</VBox>
+	</children>
+</VBox>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox styleClass="dateDeleteView" stylesheets="@layout.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteDateController">
+   <children>
+      <HBox>
+         <children>
+            <HBox fx:id="hb1" alignment="CENTER" onMouseClicked="#customize" prefWidth="600.0" styleClass="bgWhite">
+               <children>
+                  <Label onMouseClicked="#customize" styleClass="twoDfont2" text="Customize">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="hb2" alignment="CENTER" onMouseClicked="#specific" prefWidth="600.0" styleClass="bgWhite">
+               <children>
+                  <Label onMouseClicked="#specific" styleClass="twoDfont2" text="Specific">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox fx:id="vb" prefHeight="200.0" prefWidth="100.0" />
+   </children>
+</VBox>

@@ -1,0 +1,226 @@
+.loginView{
+	-fx-pref-width: 300.0px;
+	-fx-pref-height: 300.0px;
+	-fx-background-color: white;
+}
+#my-table .table-cell {
+  -fx-alignment: top-right;
+  -fx-font-size: 17.0;
+}
+.searchCss{
+	-fx-font-size: 13.0;
+	-fx-font-weight: bold;
+}
+.exitMinus:hover{
+	-fx-background-color: #87ffa7;
+}
+.title{
+-fx-background-color: #ffbb00 ;
+-fx-padding: 10.0,10.0,10.0,10.0;
+-fx-font-size: 30.0;
+-fx-alignment: center ;
+}
+.loginTitle{
+	-fx-alignment: top-center ;
+	-fx-font-family: 'Garamond';
+	-fx-padding: 10.0,10.0,10.0,10.0;
+	-fx-font-size: 30.0px;
+}
+.summaryFont{
+	-fx-font-size: 18.0;
+}
+.loginBody{
+	-fx-background-color: white;
+	-fx-alignment: center ;
+	-fx-padding: 20.0,20.0,20.0,20.0;
+	-fx-spacing: 30.0;
+}
+.skyBlue{
+	-fx-background-color: purple ;
+}
+.allignmentAndSpacing{
+	-fx-alignment: top-center ;
+	-fx-spacing: 10.0;
+}
+.loginButton{
+	-fx-cursor: hand ;
+	-fx-pref-width: 210.0px;
+	-fx-pref-height: 20.0px;
+	-fx-font-size: 15.0;
+	-fx-font-family: 'Garamond';
+}
+
+.chooseButton{
+	-fx-cursor: hand ;
+	-fx-font-weight: bold;
+	-fx-pref-width: 100.0px;
+	-fx-pref-height: 100.0px;
+	-fx-background-radius: 50.0%;	
+}
+.chooseFont{
+	-fx-font-size: 20.0px;
+	-fx-font-style: italic ;
+}
+.gap{
+	-fx-hgap: 20.0;
+	-fx-vgap: 20.0;
+}
+.twoDView{
+	-fx-pref-width: 1200.0px;
+	-fx-pref-height: 800.0px;
+	-fx-background-color: white;
+}
+.twoDPadding{
+	-fx-padding: 3.0,3.0,3.0,3.0;
+}
+.twoDspaceAndPadding{
+	-fx-padding: 5.0,10.0,10.0,10.0;
+		-fx-spacing: 15.0;
+}
+.boxColor{
+	-fx-background-color: #f2f2f2;
+}
+.twoDspacing{
+	-fx-spacing: 10.0;
+}
+.twoDspaceAndPaddingList{
+	-fx-padding: 10.0,10.0,10.0,10.0;
+		-fx-spacing: 5.0;
+}
+.twoDfont{
+	-fx-font-size: 18.0px;
+}
+.twoDfont2{
+	-fx-font-size: 17.0px;
+	-fx-alignment: top;
+	-fx-text-alignment: center;
+}
+.twoDfontmod{
+	-fx-fixed-cell-size: 26.5;
+	-fx-font-size: 17.0px;
+	/*-fx-text-alignment: center ;*/
+	-fx-alignment: top;
+}
+.twoDfontmod2{
+	-fx-fixed-cell-size: 28.0;
+	-fx-font-size: 17.0px;
+	/*-fx-text-alignment: center ;*/
+	-fx-alignment: top;
+}
+.twofont3{
+	-fx-font-size: 16.0;
+}
+.commissionstyle{
+	-fx-fixed-cell-size: 30.0;
+	-fx-row-valignment: top ;
+	-fx-font-size: 17.0px;
+	-fx-alignment: top;
+}
+.twoDspaceAndAlignment{
+	-fx-alignment: center-right ;
+	-fx-spacing: 10.0;
+}
+
+.boldFont{
+	-fx-font-weight: bold;
+}
+.lightGreen{
+	-fx-background-color: #ffbb00 ;
+}
+.twoDspacing2{
+	-fx-spacing: 5.0;
+}
+.renewSize{
+	-fx-pref-width: 100.0px;
+	-fx-pref-height: 30.0px;
+	-fx-cursor: hand;
+}
+.h2:hover{
+	-fx-background-color: yellow;
+}
+.twoDspaceandPaddingtable{
+	-fx-padding: 10.0,10.0,10.0,10.0;
+		-fx-spacing: 5.0;
+}
+.editDelete{
+	-fx-pref-tile-width: 200.0px;
+	-fx-pref-height: 20.0px;
+}
+.fillTextwhite{
+	-fx-text-fill: white;
+	-fx-fill: white;
+}
+.handCursor{
+	-fx-cursor: hand ;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #87ffa7;
+    -fx-text-fill: white;
+    -fx-cursor: hand ;
+}
+.list-cell:selected{
+	  -fx-background-color: #4e78c2;  
+}
+.list-cell:odd {
+    /*-fx-cell-color: #0093ff;*/
+    -fx-background-color: bdeff0;
+}
+.list-cell:odd:selected {
+    /*-fx-cell-color: #0093ff;*/
+    -fx-background-color: #4e78c2;
+}
+.whiteScreen{
+	-fx-background-color: white;
+}
+.fillTextBlack{
+	-fx-text-fill: black;
+	-fx-fill: black;
+}
+.table-view .column-header {
+    -fx-background-color: #ffbb00;
+}
+
+.combo-box-popup .list-cell {    
+    -fx-background-color: white;    
+}
+.combo-box .list-cell{
+       -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #87ffa7;
+    -fx-text-fill: white;
+    -fx-cursor: hand ;
+}
+.subMenuSize{
+	-fx-cursor: hand ;
+	-fx-font-weight: bold;
+	-fx-pref-width: 55.0px;
+	-fx-pref-height: 55.0px;
+	-fx-background-radius: 50.0%;	
+}
+.fontbold{
+	-fx-font-weight: bold;
+}
+.list-view .scroll-bar:vertical {
+    -fx-scale-x: 0.0;
+}
+.table-view .scroll-bar:horizontal {
+    -fx-scale-x: 0.0;
+}
+.commercialView{
+	-fx-pref-width: 1020px;
+	-fx-pref-height: 700.0px;
+	-fx-background-color: white;
+}
+.dateDeleteView{
+	-fx-pref-width: 400.0px;
+	-fx-pref-height: 200.0px;
+	-fx-background-color: white;
+}
+.customerView{
+	-fx-pref-width: 600.0px;
+	-fx-pref-height: 650.0px;
+	-fx-background-color: white;
+}

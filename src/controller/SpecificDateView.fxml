@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox focusTraversable="true" prefHeight="150.0" prefWidth="400.0" spacing="20.0" styleClass="whiteScreen" stylesheets="@layout.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SpecificDateController">
+   <children>
+      <HBox spacing="10.0">
+         <children>
+            <JFXDatePicker fx:id="from" defaultColor="#ffbb00" editable="false" promptText="From" />
+            <JFXDatePicker fx:id="to" defaultColor="#ffbb00" editable="false" promptText="To" />
+         </children>
+      </HBox>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#delete" prefHeight="25.0" prefWidth="404.0" text="Delete">
+         <styleClass>
+            <String fx:value="lightGreen" />
+            <String fx:value="h2" />
+            <String fx:value="boldFont" />
+            <String fx:value="handCursor" />
+         </styleClass>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+</VBox>
